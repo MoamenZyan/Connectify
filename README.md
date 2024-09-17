@@ -38,6 +38,8 @@ Make sure you have the following installed:
 - **.NET Core SDK** (for backend)
 - **Redis** (for caching)
 - **Hangfire Dashboard** (optional: for monitoring background jobs)
+- **SQL Server** (for storing info)
+- **S3 Bucket** (for storing photos)
 
 ### Steps
 
