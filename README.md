@@ -65,19 +65,19 @@ Make sure you have the following installed:
    ```
 3. **Set up environment variables**
    - For backend
-     ```bash
-     SendGridConfigurations__ApiKey=<Your SendGrid Api Key>
-     SendGridConfigurations__FromEmail=<Your SendGrid Sending Email>
+   ```bash
+   SendGridConfigurations__ApiKey=<Your SendGrid Api Key>
+   SendGridConfigurations__FromEmail=<Your SendGrid Sending Email>
 
-     JWTConfigurations__Issuer=<Your Token Issuer>
-     JWTConfigurations__Audience=<Your Token Audience>
-     JWTConfigurations__SigningKey=<Your Token Signing Key>
+   JWTConfigurations__Issuer=<Your Token Issuer>
+   JWTConfigurations__Audience=<Your Token Audience>
+   JWTConfigurations__SigningKey=<Your Token Signing Key>
 
-     AWS__AccessKey=<Your AWS Access Key>
-     AWS__SecretAccessKey=<Your AWS Secret Key>
-     AWS__Region=<Your Bucket Region>
-     AWS__BucketName=<Your S3 Bucket Name>
-     ```
+   AWS__AccessKey=<Your AWS Access Key>
+   AWS__SecretAccessKey=<Your AWS Secret Key>
+   AWS__Region=<Your Bucket Region>
+   AWS__BucketName=<Your S3 Bucket Name>
+   ```
 4. **Run the Application**
    - For backend
      ```bash
