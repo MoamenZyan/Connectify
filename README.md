@@ -100,5 +100,16 @@ Make sure you have the following installed:
 - Photo Sharing: Users can upload and share photos in conversations.
 - Group Chats: Users can create or join groups to message multiple people at once.
 
+## Screenshots
+
+![homepage-connectify](https://github.com/user-attachments/assets/80d68938-ccda-4a20-97a9-dd580f10bb68)
+![hompage v2](https://github.com/user-attachments/assets/2fb4716f-ddcc-4366-a716-be02518619c8)
+![login-page](https://github.com/user-attachments/assets/414df5c2-e779-49c2-9391-90502acec508)
+![signup-page](https://github.com/user-attachments/assets/643d60ee-1a1d-45d9-bc37-a9363e5b3760)
+![friend request notification](https://github.com/user-attachments/assets/3344fa5a-e506-405d-9720-0ceaf9e6fcb5)
+![friend accepted notification](https://github.com/user-attachments/assets/0e3ffbdf-c1f5-47a1-af58-eda46500300d)
+![chat-page](https://github.com/user-attachments/assets/8eb70a50-35a7-4e28-95ab-053c1293725b)
+
+
 ## Conclusion
 Connectify is designed to provide users with a seamless and modern messaging experience, combining real-time communication, multimedia sharing, and group functionality in a scalable and efficient platform. Built using cutting-edge technologies, it ensures high performance, scalability, and a user-friendly interface. With its robust backend infrastructure and sleek frontend design, Connectify is an ideal solution for modern messaging needs. We are continuously working to improve the
