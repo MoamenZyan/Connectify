@@ -77,6 +77,9 @@ Make sure you have the following installed:
    AWS__SecretAccessKey=<Your AWS Secret Key>
    AWS__Region=<Your Bucket Region>
    AWS__BucketName=<Your S3 Bucket Name>
+
+   Redis__ConnectionStrings=<Your Redis Connection URL>
+   ConnectionStrings__DefaultConnection=<Your SQL Server Connection URL>
    ```
 4. **Run the Application**
    - For backend
