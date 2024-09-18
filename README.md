@@ -113,6 +113,7 @@ Make sure you have the following installed:
 ![friend request notification](https://github.com/user-attachments/assets/3344fa5a-e506-405d-9720-0ceaf9e6fcb5)
 ![friend accepted notification](https://github.com/user-attachments/assets/0e3ffbdf-c1f5-47a1-af58-eda46500300d)
 ![chat-page](https://github.com/user-attachments/assets/8eb70a50-35a7-4e28-95ab-053c1293725b)
+![group](https://github.com/user-attachments/assets/287e09a0-58c8-4318-bfd7-2add4818c9d6)
 
 
 ## Conclusion
