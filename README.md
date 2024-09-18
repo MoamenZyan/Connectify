@@ -105,6 +105,7 @@ Make sure you have the following installed:
 
 ## Screenshots
 
+![ConnectifyERD](https://github.com/user-attachments/assets/dad04fc9-1a14-4375-bcfd-af563bf2c714)
 ![homepage-connectify](https://github.com/user-attachments/assets/80d68938-ccda-4a20-97a9-dd580f10bb68)
 ![hompage v2](https://github.com/user-attachments/assets/2fb4716f-ddcc-4366-a716-be02518619c8)
 ![login-page](https://github.com/user-attachments/assets/414df5c2-e779-49c2-9391-90502acec508)
