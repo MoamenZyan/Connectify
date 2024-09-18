@@ -1,0 +1,194 @@
+.parent {
+    display: flex;
+}
+
+.right {
+    position: relative;
+    height: 97vh;
+    width: 100%;
+    background: 
+        url("https://www.transparenttextures.com/patterns/brushed-alum.png"),
+        linear-gradient(140deg, #150930 10%, #2b375e 50%);
+    background-blend-mode: multiply;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.user .first {
+    width: 60%;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 700;
+}
+
+.account_box {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(121, 117, 117, 0.142);
+    height: max-content;
+    width: 60%;
+}
+
+
+.user_info {
+    display: flex;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 700;
+}
+
+.user_info h5 {
+    font-size: 15pt;
+}
+
+.user_info p {
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.61);
+    font-family: var(--font-geist-mono);
+    margin-top: 10px;
+    font-size: 10pt;
+}
+
+.user_info .photos {
+    position: relative;
+}
+
+.user_info .user_photo{
+    box-shadow: 0px 0px 10px 5px rgba(125, 125, 125, 0.178);
+    margin-right: 20px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user_info .add_photo {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.531);
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.user_info img:last-child:hover {
+    background-color: rgba(255, 255, 255, 0.79);
+}
+
+.user_info .last {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user_info .last button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    max-width: max-content;
+    height: 22%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.78);
+    font-size: 10pt;
+    font-weight: 700;
+    font-family: var(--font-geist-mono);
+}
+
+.user_info .last button:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.infos {
+    width: 100%;
+}
+
+.info h4{
+    color: white;
+    font-family: var(--font-geist-sans);
+    margin-bottom: 10px;
+}
+
+
+.info p {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.145);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-family: var(--font-geist-sans);
+    margin-bottom: 20px;
+}
+
+.info input {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.307);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-family: var(--font-geist-sans);
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.save {
+    cursor: pointer;
+    width: 20%;
+    min-width: 60px;
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-family: var(--font-geist-mono);
+    background-color: #2393e970;
+    color: white;
+    font-size: 12pt;
+    margin-left: 10px;
+}
+
+.cancel {
+    cursor: pointer;
+    width: 13%;
+    min-width: 60px;
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-family: var(--font-geist-mono);
+    background-color: #899faf73;
+    color: white;
+    font-size: 12pt;
+}
+
+
+.error {
+    font-family: var(--font-geist-mono);
+    font-size: 10pt;
+    color: rgba(231, 97, 128, 0.942);
+}

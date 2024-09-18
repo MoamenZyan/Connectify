@@ -1,0 +1,82 @@
+.parent {
+    position: relative;
+    width: 20%;
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    transition: 0.3s;
+    padding: 0 10px;
+}
+
+.parent::-webkit-scrollbar {
+    background-color: transparent;
+    border-radius: 10px;
+    width: 15px;
+}
+
+.parent::-webkit-scrollbar-thumb {
+    background-color: rgba(25, 195, 187, 0.459);
+    border-radius: 10px;
+}
+
+.logo {
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo .logo_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo h1{
+    font-family: var(--font-geist-sans);
+    color: white;
+    font-size: 18pt;
+    margin-left: 15px;
+}
+
+.tabs {
+    margin-top: 100px;
+    position: relative;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.tab {
+    color: white;
+    font-family: var(--font-geist-sans);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.2s;
+    font-size: 10pt;
+}
+
+.tab:hover {
+    transition: 0.2s;
+    background-color: rgba(255, 255, 255, 0.102);
+}
+
+.tab div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.tab div:first-child h3 {
+    font-family: var(--font-geist-mono);
+    margin-left: 15px;
+    transition: 0.1s;
+}

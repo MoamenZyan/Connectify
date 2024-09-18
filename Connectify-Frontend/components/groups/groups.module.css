@@ -1,0 +1,33 @@
+.tab {
+    color: white;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.2s;
+}
+
+.tab:hover {
+    transition: 0.2s;
+    background-color: rgba(255, 255, 255, 0.102);
+}
+
+.tab img {
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 10px 10px 0px rgba(4, 61, 114, 0.966);
+}
+
+.tab div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.tab div:first-child h3 {
+    font-family: var(--font-geist-mono);
+    margin-left: 15px;
+}

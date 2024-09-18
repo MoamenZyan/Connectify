@@ -1,0 +1,390 @@
+.parent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+}
+
+.chat_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    padding: 10px;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(255, 255, 255, 0.058);
+    box-shadow: 0px 10px 10px 10px rgba(255, 255, 255, 0.058);
+}
+
+.user_info {
+    position: relative;
+}
+
+.chat_header .user_info {
+    display: flex;
+    align-items: center;
+}
+
+.chat_header .user_info h3 {
+    margin-left: 10px;
+    color: white;
+    font-weight: 800;
+}
+
+.chat_header .group_photo {
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 5px 20px 0px rgba(3, 89, 125, 0.843);
+}
+
+.chat_header img:last-child {
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.103);
+    border-radius: 50%;
+}
+
+
+.chat_header img:last-child:hover {
+    background-color: rgba(255, 255, 255, 0.303);
+}
+
+.online_symbol {
+    position: absolute;
+    bottom: 5px;
+    left: 45px;
+    width: 15px;
+    height: 15px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.online {
+    position: absolute;
+    bottom: -5px;
+    left: 70px;
+    border-radius: 50%;
+    font-size: 12pt;
+    color: rgba(255, 255, 255, 0.531);
+}
+
+.content {
+    margin-top: 110px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-height: 70%;
+    overflow-y: auto;
+    transition: 0.3s;
+}
+
+.content::-webkit-scrollbar {
+    background-color: rgba(255, 255, 255, 0.051);
+    border-radius: 10px;
+    width: 8px;
+}
+
+.content::-webkit-scrollbar-thumb {
+    background-color: rgba(24, 149, 211, 0.319);
+    border-radius: 10px;
+    cursor: pointer;
+} 
+
+.messages {
+    width: 100%;
+    margin: 100px 60px 0px 60px;
+}
+
+@media (max-width: 600px) {
+    .messages {
+        width: 100%;
+        margin: 100px 10px 0px 10px;
+    }
+}
+
+.encrypt_declaration {
+    top: 30px;
+    position: absolute;
+    width: 100%;
+}
+
+.encrypt_declaration p {
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgba(153, 157, 155, 0.304);
+    width: max-content;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: default;
+    color: white;
+    font-size: 8pt;
+    transition: 0.1s;
+    text-wrap: wrap;
+    max-width: 80%;
+    white-space: pre-wrap;
+}
+
+.encrypt_declaration p:hover {
+    transition: 0.1s;
+    background-color: rgba(153, 157, 155, 0.389);
+}
+
+
+
+.chat_footer {
+    z-index: 100;
+    gap: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.chat_footer .input_wrapper {
+    position: relative;
+    width: 60%;
+}
+
+.chat_footer .input {
+    padding: 5px;
+    max-height: 200px;
+    position: absolute;
+    bottom: -32px;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: rgba(108, 136, 165, 0.196);
+    border-radius: 10px;
+}
+
+.chat_footer .input textarea {
+    position: absolute;
+    resize: none;
+    width: 87%;
+    padding: 12px;
+    background-color: transparent;
+    height: auto;
+    max-height: 180px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 13pt;
+}
+
+.chat_footer .input textarea::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+.chat_footer .input textarea::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.414);
+    border-radius: 25px;
+    cursor: default;
+}
+
+.chat_footer .input img {
+    margin-right: 10px;
+    cursor: pointer;
+    height: 100%;
+}
+
+.chat_footer .input textarea::placeholder {
+    color: rgba(255, 255, 255, 0.588);
+}
+
+.chat_footer .send {
+    height: 64px;
+    width: 64px;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(108, 136, 165, 0.196);
+    border-radius: 10px;
+}
+
+.chat_footer .send:hover {
+    background-color: rgba(255, 255, 255, 0.197);
+}
+
+
+.icons {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 15px;
+    right: 5px;
+}
+
+.unSeenMessages {
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+    position: fixed;
+    font-weight: 800;
+    background-color: rgba(19, 159, 174, 0.771);
+    right: 1.9%;
+    top: 75%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15pt;
+    z-index: 5;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 2px rgba(9, 134, 201, 0.499);
+}
+
+.lock {
+    z-index: 10;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 75%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(91, 161, 202, 0.113);
+    padding: 30px;
+    position: absolute;
+    border-radius: 10px;
+    color: white;
+}
+
+.lock span {
+    font-weight: 700;
+}
+
+.lock .friend_request {
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 11pt;
+    margin-top: 20px;
+    padding: 5px;
+    background-color: rgba(17, 228, 91, 0.412);
+}
+
+.lock .friend_request:hover {
+    background-color: rgba(17, 228, 91, 0.624);
+}
+
+.lock .cancel_friend_request {
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 11pt;
+    margin-top: 20px;
+    padding: 5px;
+    background-color: rgba(226, 23, 33, 0.668);
+}
+
+.lock .cancel_friend_request:hover {
+    background-color: rgba(226, 23, 33, 0.952);
+}
+
+.emoji_picker {
+    background-color: rgba(35, 50, 93, 0.719);
+}
+
+
+.photo_attachment_div {
+    width: 110px;
+}
+
+.attachment_wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.photo_attachment_div img:first-child {
+    position: absolute;
+    width: 100px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 10px;
+    bottom: -20px;
+    left: 10px
+}
+
+
+.photo_attachment_div img:last-child {
+    cursor: pointer;
+    top: -115px;
+    right: -10px;
+    background-color: rgba(255, 255, 255, 0.222);
+    border-radius: 50%;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    z-index: 100;
+}
+
+
+@media (max-width: 600px) {
+    .chat_footer .input_wrapper {
+        width: 73%;
+    }
+    .chat_footer .input textarea {
+        position: absolute;
+        resize: none;
+        width: 87%;
+        padding: 13px;
+        background-color: transparent;
+        height: auto;
+        max-height: 150px;
+        font-size: 10pt;
+    }
+
+    .chat_footer .send {
+        height: 55px;
+        width: 55px;
+        cursor: pointer;
+        outline: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(108, 136, 165, 0.196);
+        border-radius: 10px;
+    }
+
+    .icons {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 15px;
+        right: 50px;
+        width: 20px;
+        height: 20;
+    }
+
+    .lock {
+        width: 100%;
+    }
+
+    .lock p {
+        font-size: 10pt;
+        text-align: center;
+    }
+    
+    .lock span {
+        font-weight: 700;
+    }
+    
+    .lock .friend_request {
+        font-size: 10pt;
+        margin-top: 10px;
+    }
+}

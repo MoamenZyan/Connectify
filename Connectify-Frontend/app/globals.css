@@ -1,0 +1,32 @@
+:root {
+  --main-color: #24a38e;
+  --dark-color: #311579;
+  --bright-color:#5966ca;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 10px;
+  background: 
+    url("https://www.transparenttextures.com/patterns/brushed-alum.png"),
+    linear-gradient(150deg, var(--dark-color) 10%, var(--bright-color) 35%);
+  background-blend-mode: multiply;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.mono-text {
+  font-family: var(--font-geist-mono), monospace;
+}
+
+.sans-text {
+  font-family: var(--font-geist-sans), sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}

@@ -1,0 +1,14 @@
+.parent {
+    position: relative;
+    height: 97vh;
+    width: 100%;
+    background: 
+        url("https://www.transparenttextures.com/patterns/brushed-alum.png"),
+        linear-gradient(140deg, #150930 10%, #2b375e 50%);
+    background-blend-mode: multiply;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}

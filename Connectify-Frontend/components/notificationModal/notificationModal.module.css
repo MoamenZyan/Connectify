@@ -1,0 +1,29 @@
+.parent {
+    padding: 10px;
+    bottom: 90px;
+    z-index: 100;
+    position: absolute;
+    height: 38%;
+    width: 93%;
+    background-color: rgba(90, 111, 121, 0.469);
+    border-radius: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+.parent::-webkit-scrollbar {
+    background-color: transparent;
+    width: 5px;
+}
+
+.parent::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    background-color: rgba(225, 229, 230, 0.205);
+    padding: 0;
+}
+
+.parent h3 {
+    color: white;
+}
+

@@ -1,0 +1,19 @@
+{
+  "name": "connectify",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@microsoft/signalr": "^8.0.7",
+    "emoji-picker-react": "^4.12.0",
+    "lodash": "^4.17.21",
+    "next": "14.2.8",
+    "react": "^18",
+    "react-dom": "^18"
+  }
+}

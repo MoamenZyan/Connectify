@@ -1,0 +1,123 @@
+.message_box_other {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    color: white;
+    min-height: 60px;
+    height: max-content;
+    min-width: 30%;
+    border-radius: 10px;
+    margin: 20px 0;
+    margin-right: auto;
+    transition: 0.3s;
+    max-width: 30%;
+}
+
+.message_box_mine {
+    z-index: 1;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    color: white;
+    min-height: 60px;
+    height: max-content;
+    min-width: 30%;
+    max-width: 30%;
+    border-radius: 10px;
+    margin: 20px 0;
+    margin-left: auto;
+    transition: 0.3s;
+}
+
+.profile_photo img{
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.message_box img {
+    border-radius: 50%;
+    border: 7px solid rgba(255, 255, 255, 0.075);
+    z-index: 100;
+    height: 100%;
+}
+
+.message_content_other {
+    padding: 10px;
+    background-color: rgba(41, 227, 224, 0.177);
+    min-height: 60px;
+    height: auto;
+    min-width: 180px;
+    max-width: 100%;
+    position: relative;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.message_content_mine {
+    padding: 10px;
+    background-color: rgba(11, 152, 233, 0.466);
+    min-height: 60px;
+    height: auto;
+    min-width: 180px;
+    max-width: 100%;
+    position: relative;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+
+.message_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.message_content pre {
+    margin-bottom: 20px;
+    white-space: pre-wrap;
+}
+
+
+.message_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10pt;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+.message_info img {
+    margin-left: 5px;
+}
+
+.attachment_div {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+
+.attachment {
+    margin: 0;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.senderName {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 10pt;
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.759);
+}
+
+@media (max-width: 600px) {
+    .message_content {
+        font-size: 9pt;
+    }
+}

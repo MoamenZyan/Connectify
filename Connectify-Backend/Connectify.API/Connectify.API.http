@@ -1,0 +1,6 @@
+@Connectify.API_HostAddress = http://localhost:5102
+
+GET {{Connectify.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

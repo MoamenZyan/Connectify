@@ -1,0 +1,146 @@
+
+.parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: white;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #0e6d6b51;
+    width: 75%;
+    height: 650px;
+    padding: 10px;
+}
+
+.input_div {
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.left .input_div {
+    position: relative;
+    padding: 10px;
+    width: 90%;
+    margin-top: 30px;
+    background-color: #e5e5e554;
+    border-radius: 10px;
+}
+
+.left .input_div input {
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    margin-left: 5px;
+    padding: 5px;
+    font-size: 12pt;
+}
+
+.left .input_div input::placeholder {
+    color: white;
+}
+
+.password {
+    cursor: pointer;
+}
+
+.forget {
+    margin: 5px 25px 30px auto;
+    font-size: 10pt;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.left .account {
+    margin-top: 20px;
+}
+
+.left .account span {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.right img {
+    margin-bottom: 20px;
+}
+
+.right h2 {
+    font-size: 30pt;
+}
+
+.right p {
+    text-align: center;
+    margin-top: 30px;
+    width: 90%;
+    font-size: 12pt;
+}
+
+.login_button {
+    text-align: center;
+    margin-top: 40px;
+    background-color: #6baeb64e;
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.presentation {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.presentation h2 {
+    font-size: 13pt;
+}
+
+.presentation div {
+    border-radius: 10px;
+    height: 210px;
+    width: 200px;
+    border: 1px solid #5966ca;
+    background-color: #1ca79748;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.presentation div p {
+    font-size: 11pt;
+}
+
+.error {
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 15pt;
+    color: #ffffff9e;
+}

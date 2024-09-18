@@ -1,0 +1,20 @@
+.parent {
+    display: flex;
+}
+
+.logo {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo h1{
+    font-family: var(--font-geist-sans);
+    color: white;
+    font-size: 25pt;
+    margin-right: 20px;
+}
